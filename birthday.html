@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Happy Birthday jeje❣️</title>
+<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="loader" >
+ <div class="img" >
+   <img src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyczUzNmFpenVhM2M3bm10dDBvd3J0aWM4dWN6dnlleDdnNDZsd255eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EehPm5Xw8NokatGozq/giphy.gif" alt="" >
+ </div>
+
+ <p> kado rahasia dari aku : rifkyxujang </p>
+	<button onclick="start()"> buka!!</button>
+  <img src="https://i.pinimg.com/originals/00/ed/7e/00ed7ea3401fe1605ecaffeca76dc7ec.gif" alt="" >
+</div>
+</div>
+<main class="main" >
+ <h1 class="title">
+  <span>H</span><span>A</span><span>P</span><span>P</span><span>Y</span><span>B</span><span>I</span><span>R</span><span>T</span><span>H</span><span>D</span><span>A</span><span>Y</span>
+ </h1>
+ <div class="img" >
+   <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyYzF5Y2VvMXQzaHV6aDhqYXhzcTY1ZzQ4NGJ1d3U4dXgzdDhwN3hiMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0Zo86aOXHtoRq00JEa/giphy.gif" alt="" >
+ </div>
+ <h1> AJENG TRI PUTRI WULANDARI❣️</h1>
+ <h2 class="subtitle"> ini perjalanan kita sayang </h2>
+ <div class="container" >
+ </div>
+ <audio src="./music/music1.mp3"" loop id="music"></audio>
+</main>
+<!-- script -->
+<script>
+
+/*
+{
+ name:"",
+ avatar:,
+ wish:""
+},
+*/
+  let wishes = [
+   {
+	name:"💕 BAB I naik gunung💕",
+	avatar:18736943,
+	wish:"Sending you smiles for every moment of your special day…Have a wonderful time and a very happy birthday!",
+   },
+   {
+   name:"Amardeep",
+   avatar:9151475,
+   wish:"May your sweet smile never fade away. I wish you a very happy and sweet birthday. Good bless you",
+   },
+   {
+   name:"Akr",
+   avatar:18565967,
+   wish:"Forget the past; look forward to the future, for the best things are yet to come, Happy birthday japanese gudiya"
+   },
+   {
+	name:"Zoya",
+	avatar:18754964,
+	wish:"Happy birthday! I hope all your birthday wishes and dreams come true"
+   },
+   {
+	name:"🌸Little_cherry🌸",
+	avatar:18552873,
+	wish:"Sending you a birthday wish wrapped with all my love. Have a very happy birthday"
+   },
+   {
+	name:"SKR",
+	avatar:17665461,
+	wish:"May your birthday bring you more cute smiles and sunny skies."
+   },
+   {
+	name:"Piyush",
+	avatar:17494293,
+	wish:"Happy Birthday!I hope your special day is filled with cuteness and welcome surprises!"
+   },
+   {
+   name:"Deepa",
+   avatar:17555554,
+   wish:"Wishing you a very warm Birthday.Happy Birthday Lamya di 🤗"
+   },
+   {
+	name:"Rishva",
+	avatar:16966833,
+	wish:"Happy birthday, sister! May the Lord continue to open all kinds of amazingly beautiful opportunities for happiness in your life. This is my greatest prayer for you. Sis, on your big day, may God bless you with a lifetime filled with good health, dreams come true and happiness."
+   },
+   {
+	name:"Jasmine💖",
+	avatar:19480187,
+	wish:"Happy Birthday To My Amazing Sister. Wishing you a birthday full of joy and happiness. Enjoy your special day!"
+   },
+   {
+   name:"Kartik Taneja",
+   avatar:19014619,
+   wish:"Happy Birthday. Here’s to the sweetest, cutest, most “purrfect” sister around! It must run in the family."
+   },
+   {
+	name:"Aastha",
+	avatar:19436832,
+	wish:"Happy birthday Lamya di..Wish u a very happy birthday...Many many happy returns of the day...Hope ur this year goes fine..May all the blessings keep surrounded u..."
+   },
+   {
+	name:"Prachi The Pari🎸",
+	avatar:19111317,
+	wish:"Happy Birthday. You are the best sister ever! Enjoy your special day to the fullest. I love you."
+   },
+   {
+   name:"Jay",
+   avatar:14574715,
+   wish:"Happy Birthday, Sis! To the smartest, kindest, bestest, prettiest, and the most dearest of all sister. Love You."
+   },
+	 {
+	name:"Sakshi💕",
+	avatar:19181491,
+	wish:"Happy Birthday Lamya sis You are so sweet and cute.May your all dreams come true💕my dear sis🤗"
+   },
+   {
+   name:"Anshika🎶",
+   avatar:18653347,
+   wish:"The joy that you have spread in the past may come back to you on this day.Wishing you a very Happy Birthday!"
+   },
+   {
+	name:"Safalta",
+	avatar:18627970,
+	wish:"Today is not just your special day, it is even mine. Because today was the day when my best friend came into this world. If it were not for today, my life wouldn't have been half the fun it is. I owe so much to you. I love you buddy. Happy Birthday."
+   },
+  ];
+  const container = document.querySelector(".container");
+  
+  function addWishes(data) {
+   let div = document.createElement("div");
+   div.classList.add("card");
+   div.innerHTML = `
+	<div>
+	<div class="img">
+	<img src="https://api.sololearn.com/Uploads/Avatars/${data.avatar}.jpg" alt="" >
+	</div>
+	<h2 class="card_title" >${data.name}</h2>
+	<p class="card_text" >"${data.wish}"</p>
+	</div>`;
+   container.appendChild(div)
+  }
+  function showWishes(){
+   wishes.forEach(wish => {
+	addWishes(wish)
+   });
+  }
+  function start() {
+   document.querySelector(".loader").style.display = "none";
+   showWishes()
+   document.getElementById("music").play();
+  }
+</script>
+</body>
+</html>
